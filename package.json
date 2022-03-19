@@ -1,9 +1,11 @@
 {
   "name": "boring-avatars-svg",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/Hot-key/boring-avatars",
   "license": "MIT",
+  "author": "Hot-key",
   "devDependencies": {
     "@types/node": "^17.0.21"
   }

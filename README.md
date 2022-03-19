@@ -2,6 +2,20 @@
 
 forked from [boring avatars](https://boringavatars.com/)
 
+![hi](https://badgen.net/npm/v/boring-avatars-svg)
+
+## Install
+
+```
+npm i boring-avatars-svg
+```
+
+or
+
+```
+yarn add boring-avatars-svg
+```
+
 ## Usage
 
 ```typescript
