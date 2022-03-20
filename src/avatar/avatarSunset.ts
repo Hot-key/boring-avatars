@@ -30,11 +30,11 @@ const AvatarSunset = ({ name, colors, size, square }: AvatarData) => {
     >
       <title>${name}</title>
       <mask id="mask__sunset" maskUnits="userSpaceOnUse" x="0" y="0" width="${SIZE}" height="${SIZE}">
-        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}`}" fill="#FFFFFF" />
+        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}"`} fill="#FFFFFF" />
       </mask>
       <g mask="url(#mask__sunset)">
-        <path fill=url(#gradient_paint0_linear_${replaceName}) d="M0 0h80v40H0z" />
-        <path fill=url(#gradient_paint1_linear_${replaceName}) d="M0 40h80v40H0z" />
+        <path fill="url(#gradient_paint0_linear_${replaceName})" d="M0 0h80v40H0z" />
+        <path fill="url(#gradient_paint1_linear_${replaceName})" d="M0 40h80v40H0z" />
       </g>
       <defs>
         <linearGradient
@@ -45,8 +45,8 @@ const AvatarSunset = ({ name, colors, size, square }: AvatarData) => {
           y2="${SIZE / 2}"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${sunsetColors[0]}" />
-          <stop offset="1" stopColor="${sunsetColors[1]}" />
+          <stop stop-color="${sunsetColors[0]}" />
+          <stop offset="1" stop-color="${sunsetColors[1]}" />
         </linearGradient>
         <linearGradient
           id="gradient_paint1_linear_${replaceName}"
@@ -56,8 +56,8 @@ const AvatarSunset = ({ name, colors, size, square }: AvatarData) => {
           y2="${SIZE}"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${sunsetColors[2]}" />
-          <stop offset="1" stopColor="${sunsetColors[3]}" />
+          <stop stop-color="${sunsetColors[2]}" />
+          <stop offset="1" stop-color="${sunsetColors[3]}" />
         </linearGradient>
       </defs>
     </svg>

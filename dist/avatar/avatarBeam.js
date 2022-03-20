@@ -41,7 +41,7 @@ const AvatarBeam = ({ name, colors, size, square }) => {
     >
       <title>${name}</title>
       <mask id="mask__beam" maskUnits="userSpaceOnUse" x="0" y="0" width="${SIZE}" height="${SIZE}">
-        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}`}" fill="#FFFFFF" />
+        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}"`} fill="#FFFFFF" />
       </mask>
       <g mask="url(#mask__beam)">
         <rect width="${SIZE}" height="${SIZE}" fill="${data.backgroundColor}" />
@@ -68,7 +68,7 @@ const AvatarBeam = ({ name, colors, size, square }) => {
               d="M15 ${19 + data.mouthSpread} c2 1 4 1 6 0"
               stroke="${data.faceColor}"
               fill="none"
-              strokeLinecap="round"
+              stroke-linecap="round"
             />
           `
         : `

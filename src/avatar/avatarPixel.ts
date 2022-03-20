@@ -37,10 +37,10 @@ const AvatarPixel = ({ name, colors, size, square }: AvatarData) => {
         width="${SIZE}"
         height="${SIZE}"
       >
-        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}`}" fill="#FFFFFF" />
+        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}"`} fill="#FFFFFF" />
       </mask>
       <g mask="url(#mask__pixel)">
-        <rect width="10" height="10" fill={pixelColors[0]} />
+        <rect width="10" height="10" fill="${pixelColors[0]}" />
         <rect x="20" width="10" height="10" fill="${pixelColors[1]}" />
         <rect x="40" width="10" height="10" fill="${pixelColors[2]}" />
         <rect x="60" width="10" height="10" fill="${pixelColors[3]}" />

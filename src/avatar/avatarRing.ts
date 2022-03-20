@@ -38,7 +38,7 @@ const AvatarRing = ({ name, colors, size, square }: AvatarData) => {
     >
       <title>${name}</title>
       <mask id="mask__ring" maskUnits="userSpaceOnUse" x="0" y="0" width="${SIZE}" height="${SIZE}">
-        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}`}" fill="#FFFFFF" />
+        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}"`} fill="#FFFFFF" />
       </mask>
       <g mask="url(#mask__ring)">
         <path d="M0 0h90v45H0z" fill="${ringColors[0]}" />

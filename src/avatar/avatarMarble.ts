@@ -33,7 +33,7 @@ const AvatarMarble = ({ name, colors, size, square }: AvatarData) => {
     >
       <title>${name}</title>
       <mask id="mask__marble" maskUnits="userSpaceOnUse" x="0" y="0" width="${SIZE}" height="${SIZE}">
-        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}`}" fill="#FFFFFF" />
+        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}"`} fill="#FFFFFF" />
       </mask>
       <g mask="url(#mask__marble)">
         <rect width="${SIZE}" height="${SIZE}" fill="${properties[0].color}" />
@@ -61,9 +61,9 @@ const AvatarMarble = ({ name, colors, size, square }: AvatarData) => {
         <filter
           id="prefix__filter0_f"
           filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
+          color-interpolation-filters="sRGB"
         >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="7" result="effect1_foregroundBlur" />
         </filter>

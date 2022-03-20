@@ -28,7 +28,7 @@ const AvatarBauhaus = ({ name, colors, size, square }) => {
     >
       <title>${name}</title>
       <mask id="mask__bauhaus" maskUnits="userSpaceOnUse" x="0" y="0" width="${SIZE}" height="${SIZE}">
-        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}`}" fill="#FFFFFF" />
+        <rect width="${SIZE}" height="${SIZE}" ${square ? '' : `rx="${SIZE * 2}"`} fill="#FFFFFF" />
       </mask>
       <g mask="url(#mask__bauhaus)">
         <rect width="${SIZE}" height="${SIZE}" fill="${properties[0].color}" />
@@ -55,7 +55,7 @@ const AvatarBauhaus = ({ name, colors, size, square }) => {
           y1="${SIZE / 2}"
           x2="${SIZE}"
           y2="${SIZE / 2}"
-          strokeWidth="2"
+          stroke-width="2"
           stroke="${properties[3].color}"
           transform="
             translate(${properties[3].translateX} ${properties[3].translateY})
