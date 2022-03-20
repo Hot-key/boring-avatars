@@ -59,7 +59,7 @@ const AvatarBeam = ({ name, colors, size, square }) => {
         />
         <g
           transform="
-            translate(${data.faceTranslateX} ${data.faceTranslateX})
+            translate(${data.faceTranslateX} ${data.faceTranslateY})
             rotate(${data.faceRotate} ${SIZE / 2} ${SIZE / 2})"
         >
           ${data.isMouthOpen

@@ -66,7 +66,7 @@ const AvatarBeam = ({ name, colors, size, square }: AvatarData) => {
         />
         <g
           transform="
-            translate(${data.faceTranslateX} ${data.faceTranslateX})
+            translate(${data.faceTranslateX} ${data.faceTranslateY})
             rotate(${data.faceRotate} ${SIZE / 2} ${SIZE / 2})"
         >
           ${
